@@ -25,6 +25,7 @@
 .column-right {
     float: left;
     padding-left: 5%;
+    padding-right: 5% ; 
     width: 80%;
 }
 /* Clear floats after the columns */
