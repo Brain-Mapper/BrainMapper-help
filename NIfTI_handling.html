@@ -22,45 +22,43 @@ cc<!DOCTYPE html>
 
         <div class="w3-card w3-margin w3-margin-top">
           <div id="toc_container">
-        	<p class="toc_title">Contents</p>
+        	<p class="toc_title">Contents - NIfTI Handling </p>
           <a href="index.html" style="color : #5577ee"> Go back to home page </a>
         	<ul class="toc_list">
-        	   <li><a href="#Global_presentation">2 NIfTI Handling</a></li>
-             <ul>
-        	   <li><a href="#set">2.1 Set</a></li>
+				<li><a href="index.html"> Go back</a></li>
+        	   <li><a href="#set"><strong>2.1 Set</strong></a></li>
         	    <ul>
         		      <li><a href="#new_set">2.1.1 Create a new set</a></li>
         		      <li><a href="#rename_set">2.1.2 Rename a set</a></li>
         		      <li><a href="#sub_set">2.1.3 Add a sub set</a></li>
         	      </ul>
-            	<li><a href="#collection">2.2 Collection</a></li>
+            	<li><a href="#collection"><strong>2.2 Collection</strong></a></li>
             	  <ul>
             		<li><a href="#new_collection">2.2.1 Create a new collection</a></li>
             		<ul>
-            			<li><a href="#excel">2.2.1.1 From an Excel file</a></li>
-            			<li><a href="#nifti">2.2.1.2 From a NIfTI file</a></li>
+            			<li><a href="#excel"><small>2.2.1.1 From an Excel file</small></a></li>
+            			<li><a href="#nifti"><small>2.2.1.2 From a NIfTI file</small></a></li>
             		</ul>
             		<li><a href="#select">2.2.2 Select collections</a></li>
             	  </ul>
-            	<li><a href="#edit">2.3 Edit Collections</a></li>
+            	<li><a href="#edit"><strong>2.3 Edit Collections</strong></a></li>
             	 <ul>
-              		<li><a href="#select_edit">2.3.1 Select the collection to edit</a></li>
+              		<li><a href="#select_edit">2.3.1 Select collection to edit</a></li>
               		<li><a href="#rename_col">2.3.2 Rename a Collection</a></li>
-              		<li><a href="#add_images">2.3.3 Add images to a Collection</a></li>
-              		<li><a href="#remove_images">2.3.4 Remove images to a Collection</a></li>
-              		<li><a href="#show">2.3.5 Show one image in a Collection</a></li>
+              		<li><a href="#add_images">2.3.3 Add images</a></li>
+              		<li><a href="#remove_images">2.3.4 Remove images</a></li>
+              		<li><a href="#show">2.3.5 Show one image</a></li>
               		<li><a href="#del_col">2.3.6 Delete one collection</a></li>
             	  </ul>
-              </ul>
         	</div>
         </div>
       </div>
 
     <div class="column-right">
-      <h1> NIfTI Handling in brainMapper</h1>
+      <h1> NIfTI Handling in BrainMapper</h1>
         	<h2 id="set">2.1 Set</h2>
         	<p>
-        		When you launch the software for the first time, a set named "default" is already created.
+        		When you launch the software, a set named with the current date is created. It will prevent name problems (when some sets have the same name).
         	</p>
         	<h3 id="new_set">2.1.1 Create a new set</h3>
         	<p>
@@ -91,11 +89,11 @@ cc<!DOCTYPE html>
         		<img src="imgs/sub_set.jpg" style="width:20%">
         	</p>
         	<p>
-        		Note that you will see the list of a set's subsets by clicking on the little arrow logo on the right.
+        		Note that you will see the list of a set's subsets by clicking on the little arrow logo on the right. If you click on the name of a set, the right side of the screen will change and show what is inside the set.
         	</p>
         	<h2 id="collection">3. Collection</h2>
         	<p>
-        		When you launch the software for the first time, a set named "default" is already created. That means, when you create a collection, it will be added to the current set, "default" in this case.
+        		When you launch the software, a set named with the current date is already created. That means, when you create a collection, it will be added to the current set (named with the current date in this case).
         	</p>
         	<p>
         		A collection is an object where we stock the data. Usually, the data are some images, that's why we will name the Collection object as an Image Collection.
@@ -123,7 +121,7 @@ cc<!DOCTYPE html>
         	</p>
         	<h3 id="select">3.2. Select collections</h3>
         	<p>
-        		To work on your data using BrainMapper, you have to select the collections you want to working on. To do so, just click on the collection you want (the selected collections are ticked).
+        		To work on your data using BrainMapper, you have to select the collections you want to work on. To do so, just click on the collection you want (the selected collections are ticked).
         	</p>
         	<p>
         		Note that you can select collections even if they are not in the same set!
@@ -131,7 +129,15 @@ cc<!DOCTYPE html>
         	<p>
         		<img src="imgs/selected.jpg" style="width:40%">
         	</p>
-
+			<p>
+				You can use the buttons "Select all" and "Deselect all" on the right side to select or deselect all the image collection you have in your current set. That will be usefull when you have a lot of image collections you (don't) want to use.
+			</p>
+			<p>
+				<img src="imgs/de-select.jpg" style="width:20%">
+			</p>
+			<p>
+				Also, there are the same buttons on the left (under the list of sets). This time, you can use them to select or deselect all the image collection from all the sets. That will be usefull when you want to clean your selection or select all data without forgetting one.
+			</p>
         	<h2 id="edit">4. Edit Collections</h2>
         	<p>
         		Once you added a collection, using NIfTI files or Excel file, you can edit them by using the menu at the bottom. That will show a new page where you will see the list of your selected Collections on the right.
@@ -183,6 +189,9 @@ cc<!DOCTYPE html>
         	<p>
         		A basic visualization appears at the bottom of the screen. Note that this visualization may take a little time if the image contains a lot of information. You can then manipulate the visualization by clicking, moving the mouse in it or by scrolling.
         	</p>
+			<p>
+				This visualization will display the highest intensity in white and fit all others on a "white to black" scale for "higher to lower" intensity.
+			</p>
         	<p>
         		The name of the image shown is displayed at the top of the screen.
         	</p>

@@ -24,37 +24,46 @@
       <div id="toc_container">
     	<p class="toc_title">Contents</p>
     	<ul class="toc_list">
-    	   <li><a href="#Global_presentation">1 Global presentation</a></li>
-    	   <li><a href="NIfTI_handling.html">2 NIfTI Handling</a></li>
+    	   <li><a href="#Global_presentation"><strong>1 Global presentation</strong></a></li>
+    	   <li><a href="NIfTI_handling.html"><strong>2 NIfTI Handling</strong></a></li>
          <ul>
-           <li>2.1 Set</li>
+           <li><a href="NIfTI_handling.html#set">2.1 Set</a></li>
            <ul>
-             <li>2.1.1 Create a new set</li>
-             <li>2.1.2 Rename a set</li>
-             <li>2.1.3 Add a sub set</li>
+             <li><small><a href="NIfTI_handling.html#new_set">2.1.1 Create a new set</a></small></li>
+             <li><small><a href="NIfTI_handling.html#rename_set">2.1.2 Rename a set</a></small></li>
+             <li><small><a href="NIfTI_handling.html#sub_set">2.1.3 Add a sub set</a></small></li>
            </ul>
-         <li>2.2 Collection</li>
+         <li><a href="NIfTI_handling.html#collection">2.2 Collection</a></li>
            <ul>
-           <li>2.2.1 Create a new collection</li>
-           <ul>
-             <li>2.2.1.1 From an Excel file</li>
-             <li>2.2.1.2 From a NIfTI file</li>
+           <li><small><a href="NIfTI_handling.html#new_collection">2.2.1 Create a new collection</a></small></li>
+           <li><small><a href="NIfTI_handling.html#select">2.2.2 Select collections</a></small></li>
            </ul>
-           <li>2.2.2 Select collections</li>
-           </ul>
-         <li>2.3 Edit Collections</li>
+         <li><a href="NIfTI_handling.html#edit">2.3 Edit Collections</a></li>
           <ul>
-             <li>2.3.1 Select the collection to edit</li>
-             <li>2.3.2 Rename a Collection</li>
-             <li>2.3.3 Add images to a Collection</li>
-             <li>2.3.4 Remove images to a Collection</li>
-             <li>2.3.5 Show one image in a Collection</li>
-             <li>2.3.6 Delete one collection</li>
+             <li><small><a href="NIfTI_handling.html#select_edit">2.3.1 Select collection to edit</a></small></li>
+             <li><small><a href="NIfTI_handling.html#rename_col">2.3.2 Rename a Collection</a></small></li>
+             <li><small><a href="NIfTI_handling.html#add_images">2.3.3 Add images</a></small></li>
+             <li><small><a href="NIfTI_handling.html#remove_images">2.3.4 Remove images</a></small></li>
+             <li><small><a href="NIfTI_handling.html#show">2.3.5 Show one image</a></small></li>
+             <li><small><a href="NIfTI_handling.html#del_col">2.3.6 Delete one collection</a></small></li>
            </ul>
           </ul>
-            <li><a href="clustering.html">3 Clustering</a></li>
-            <li><a href="calculations.html">4 Calculations</a></li>
-            <li><a href="import_export.html">5 Import/Export</a></li>
+            <li><a href="clustering.html"><strong>3 Clustering</strong></a></li>
+            <li><a href="calculations.html"><strong>4 Calculations</strong></a></li>
+            <li><a href="import_export.html"><strong>5 Import/Export</strong></a></li>
+			<ul>
+             <li><a href="import_export.html#workspace">5.1 Workspace</a></li>
+			 <ul>
+				 <li><a href="import_export.html#what"><small>5.1.1 What is it?</small></a></li>
+				 <li><a href="import_export.html#import_workspace"><small>5.1.2 Import workspace</small></a></li>
+				 <li><a href="import_export.html#export_workspace"><small>5.1.3 Export workspace</small></a></li>
+           </ul>
+             <li><a href="import_export.html#export">5.2 Export an Image Collection</a></li>
+			 <ul>
+				 <li><a href="import_export.html#export_nifti"><small>5.2.1 As a NIfTI file</small></a></li>
+				 <li><a href="import_export.html#export_csv"><small>5.2.2 As a CSV file</small></a></li>
+           </ul>
+           </ul>
         	</ul>
     	</div>
     </div>
@@ -67,7 +76,7 @@
       The aim of this project was to simplify the treatment chain of neurosurgeon Dr. Fabien Rech, who had to use several librairies, software and methods to extract interesting data from NIfTI files.<br/>
       The workchain of NIfTI processing and information extraction carried out by Dr. Rech for his thesis work was the following one :
       <br/><br/><br/>
-      INSERT IMAGE HERE
+       <img src="imgs/chaine.jpg" style="width:50%">    
       <br/><br/><br/>
       Our aim was to simplify this work chain and offer the possibility to manage NIfTI, extract the interesting data from them to use it for calculations and clustering algorithms
       <br/><br/>
