@@ -24,17 +24,106 @@
           <div id="toc_container">
             <p class="toc_title">Contents - Clustering</p>
             <a href="index.html" style="color : #5577ee"> Go back to home page </a>
-          	<ul class="toc_list">
-          	   <li><a href="#Global_presentation">3 Clustering</a></li>
-          	</ul>
+            <ul class="toc_list">
+          	   <li><a href="#data"><strong>3.1 Data extraction for clustering</strong></a></li>
+          	    <ul>
+          		      <li><a href="#extract">3.1.1 How data is extracted</a></li>
+          		      <li><a href="#all_points">3.1.2 Use all points of an image</a></li>
+          		      <li><a href="#as_centroid">3.1.3 Use the image's points centroid as data</a></li>
+          	      </ul>
+              	<li><a href="#methods"><strong>3.2 Apply clustering algorithms on extracted data</strong></a></li>
+              	  <ul>
+              		<li><a href="#kmeans">3.2.1 KMeans</a></li>
+              		<li><a href="#kmedoids">3.2.2 KMedoids</a></li>
+                  <li><a href="#agglo">3.2.3 Agglomerative Clustering</a></li>
+                  <ul>
+                    <li><a href="#ward"><small>3.2.2.1 Ward linkage</small></a></li>
+                    <li><a href="#mean_link"><small>3.2.2.2 Mean linkage</small></a></li>
+                  </ul>
+              	  </ul>
+              	<li><a href="#script_env"><strong>3.3 Execute custom functions : user script environment</strong></a></li>
+                <li><a href="#clust_results"><strong>3.4 Clustering results </strong></a></li>
+                <ul>
+                  <li><a href="#clust_assign">3.4.1 Cluster assignment</a></li>
+                  <ul>
+                    <li><a href="#as_set"><small>3.4.1.1 Save results as set</small></a></li>
+                    <li><a href="#to_csv"><small>3.4.1.2 Export as CSV file</small></a></li>
+                  </ul>
+                  <li><a href="#visu">3.4.2 Graphic Visualisation</a></li>
+                  <li><a href="#val_index">3.4.3 Internal Validation Indexes</a></li>
+                  <ul>
+                    <li><a href="#mean_silhouette"><small>3.4.3.1 Mean Silhouette</small></a></li>
+                    <li><a href="#ch_index"><small>3.4.3.2 Calinski-Habaraz Index</small></a></li>
+                    <li><a href="#db_index"><small>3.4.3.3 Davies Boulin index</small></a></li>
+                  </ul>
+                </ul>
+              </ul>
         	</div>
         </div>
       </div>
       <div class="column-right">
         <div id="Clustering">
           <h1> Clustering on NIfTI data</h1>
-          brain-Mapper aims to allow user to use the interesting data from NIfTI files to perform clustering algorithms and thus determine the spatial position groups of voxels.
+          brain-Mapper aims to allow the user to use the interesting data from NIfTI files to perform clustering algorithms and thus determine the different groups of voxels.<br/>
+          To accomplish this, brain-Mapper extracts the data from NIfTI files and allows you to select the method you would like to apply. Clustering results can be exported as a CSV file or
+          saved in the application, and thus be exported as new NIfTI files.<br/><br/>
+          In this section we explain the main functionalities of our software around clustering
 
+          <h2 id="data">3.1 Data extraction for clustering</h2>
+        	<p>
+        		When you launch the software, a set named with the current date is created. It will prevent name problems (when some sets have the same name).
+        	</p>
+        	<h3 id="extract">3.1.1 How data is extracted</h3>
+        	<p>
+        		To create a new set, you can use the shortcut "Ctrl+S" or click on the menu "New Set"/ "Create new set"
+        		<img src="imgs/create_set.jpg" style="width:40%">
+        	</p>
+          <h3 id="all_points">3.1.2 Use all points of an image</h3>
+        	<p>
+
+          </p>
+          <h3 id="as_centroid">3.1.3 Use the image's points centroid as data</h3>
+        	<p>
+
+          </p>
+
+          <h2 id="methods">3.2 Apply clustering algorithms on extracted data</h2>
+        	<p></p>
+          <h3 id="kmeans">3.2.1 KMeans</h3>
+        	<p> </p>
+          <h3 id="kmedoids">3.2.2 KMedoids</h3>
+        	<p> </p>
+          <h3 id="agglo">3.2.3 Agglomerative Clustering</h3>
+        	<p> </p>
+
+          <h4 id="ward">3.2.3.1 Ward Linkage</h4>
+        	<p> </p>
+          <h4 id="mean_link">3.2.3.2 Mean Linkage</h4>
+        	<p> </p>
+
+          <h2 id="data">3.3 Execute custom functions : user script environment</h2>
+        	<p></p>
+
+          <h2 id="clust_results">3.4 Clustering results</h2>
+        	<p></p>
+          <h3 id="clust_assign">3.4.1 Cluster assignment</h3>
+        	<p> </p>
+          <h4 id="as_set">3.4.1.1 Save as set</h4>
+        	<p> </p>
+          <h4 id="to_csv">3.4.1.2 Export as CSV file</h4>
+        	<p> </p>
+
+          <h3 id="visu">3.4.2 Graphic visualisation</h3>
+        	<p> </p>
+          <h3 id="val_index">3.4.3 Internal Validation indexes</h3>
+        	<p> </p>
+
+          <h4 id="mean_silhouette">3.4.3.1 Mean Silhouette</h4>
+        	<p> </p>
+          <h4 id="ch_index">3.4.3.2 Calinski-Habaraz score</h4>
+        	<p> </p>
+          <h4 id="db_index">3.4.3.3 Davis-Boulin index</h4>
+        	<p> </p>
 
         </div>
       </div>

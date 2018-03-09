@@ -49,6 +49,44 @@
            </ul>
           </ul>
             <li><a href="clustering.html"><strong>3 Clustering</strong></a></li>
+            <ul>
+              <li><a href="#data"><strong>3.1 Data extraction for clustering</strong></a></li>
+               <ul>
+                   <li><a href="#extract">3.1.1 How data is extracted</a></li>
+                   <li><a href="#all_points">3.1.2 Use all points of an image</a></li>
+                   <li><a href="#as_centroid">3.1.3 Use the image's points centroid as data</a></li>
+                 </ul>
+               <li><a href="#methods"><strong>3.2 Perform clustering algorithms on extracted data</strong></a></li>
+                 <ul>
+                 <li><a href="#kmeans">3.2.1 KMeans</a></li>
+                 <li><a href="#kmedoids">3.2.2 KMedoids</a></li>
+                 <li><a href="#agglo">3.2.3 Agglomerative Clustering</a></li>
+                 <ul>
+                   <li><a href="#ward"><small>3.2.2.1 Ward linkage</small></a></li>
+                   <li><a href="#mean_link"><small>3.2.2.2 Mean linkage</small></a></li>
+                 </ul>
+                 </ul>
+               <li><a href="#script_env"><strong>3.3 Execute custom functions : user script environment</strong></a></li>
+               <li><a href="#clust_results"><strong>3.4 Visualize clustering results </strong></a></li>
+               <ul>
+                 <li><a href="#clust_assign">3.4.1 Cluster assignment</a></li>
+                 <ul>
+                   <li><a href="#as_set"><small>3.4.1.1 Save results as set</small></a></li>
+                   <li><a href="#to_csv"><small>3.4.1.2 Export as CSV file</small></a></li>
+                 </ul>
+                 <li><a href="#visu">3.4.2 Graphic Visualisation</a></li>
+                 <li><a href="#val_index">3.4.3 Internal Validation Indexes</a></li>
+                 <ul>
+                   <li><a href="#mean_silhouette"><small>3.4.3.1 Mean Silhouette</small></a></li>
+                   <li><a href="#ch_index"><small>3.4.3.2 Calinski-Habaraz Index</small></a></li>
+                   <li><a href="#db_index"><small>3.4.3.3 Davies Boulin index</small></a></li>
+                 </ul>
+               </ul>
+
+
+            </ul>
+
+
             <li><a href="calculations.html"><strong>4 Calculations</strong></a></li>
             <li><a href="import_export.html"><strong>5 Import/Export</strong></a></li>
 			<ul>
@@ -76,11 +114,11 @@
       The aim of this project was to simplify the treatment chain of neurosurgeon Dr. Fabien Rech, who had to use several librairies, software and methods to extract interesting data from NIfTI files.<br/>
       The workchain of NIfTI processing and information extraction carried out by Dr. Rech for his thesis work was the following one :
       <br/><br/><br/>
-       <img src="imgs/chaine.jpg" style="width:50%">    
+       <img src="imgs/chaine.jpg" style="width:50%">
       <br/><br/><br/>
       Our aim was to simplify this work chain and offer the possibility to manage NIfTI, extract the interesting data from them to use it for calculations and clustering algorithms
       <br/><br/>
-      
+
       <h2> The NIfTI format </h2>
 
       Our software can open compressed NIfTI formats ('.nii.gz')
