@@ -36,6 +36,19 @@
     clear: both;
 }
 
+.alert{
+  display: inline-block;
+}
+.alert-info{
+  width: 80%;
+  background-color: #fcc;
+  border-radius: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+  padding-top: 1%;
+}
+
 h1 { color: #3f3446; }
 h2{ color: #50465e; }
 h3{ color: #635b75; }
