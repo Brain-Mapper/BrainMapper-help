@@ -49,6 +49,12 @@
   padding-top: 1%;
 }
 
+.command {
+  background-color: #ccc;
+  border-radius: 12px;
+  padding: 2%; 
+}
+
 h1 { color: #3f3446; }
 h2{ color: #50465e; }
 h3{ color: #635b75; }
