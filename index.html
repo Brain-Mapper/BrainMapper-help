@@ -111,9 +111,9 @@
 
       The aim of this project was to simplify the treatment chain of neurosurgeon Dr. Fabien Rech, who had to use several librairies, software and methods to extract interesting data from NIfTI files.<br/>
       The workchain of NIfTI processing and information extraction carried out by Dr. Rech for his thesis work was the following one :
-      <br/><br/><br/>
-       <img src="imgs/chaine.jpg" style="width:50%">
-      <br/><br/><br/>
+      <div style="padding-left: 24%; padding-top:3%; padding-bottom:3%">
+       <img src="imgs/chaine.jpg" style="width:60%">
+     </div>
       Our aim was to simplify this work chain and offer the possibility to manage NIfTI, extract the interesting data from them to use it for calculations and clustering algorithms
       <br/><br/>
       <h2> Software usecase</h2>
@@ -137,13 +137,20 @@
 
       Thus, the current version of this software allows the user to : <br>
       <ul>
-        <li>Smt</li>
-        <li>Smt</li>
-        <li>Smt</li>
-        <li>Smt</li>
-        <li>Smt</li>
-        <li>Smt</li>
-        <li>Smt</li>
+        <li><b>Open</b> NIfTI files (<em><b>'.nii'</b></em> or in compressed format <em><b>'.nii.gz'</b></em>) and put them in
+          <b>Sets</b>, which are associated with a brain response and <b>Image Collections</b>, associated mostly to patients </li>
+        <li>Import and export the workspace from/into a directory, whose structure will reflect that of the application (set folders, image collections subfolders...) </li>
+        <li>Edit the content of sets and image collections, and change their names</li>
+        <li>Visualize in a 3D graph the contents of a NIfTI image from the edition page </li>
+        <li>Select several image collections, across all sets, containing the images to which calculations and clustering algorithms will be applied </li>
+        <li>Perform several calculations on selected NIfTI files</li>
+        <li>Extract data from selected NIfTI files and perform clustering methods on this data (KMeans, KMedoids, AgglomerativeClustering)</li>
+        <li>Visualize cluster assignment proportions and samples silhouette through graphical representations in clustering page</li>
+        <li>Calculate <em><b>internal validation indexes</b></em> for clustering results, such as Silhouettes, Mean Silhouette, Calinski-Habaraz score and Davis-Boulin index</li>
+        <li>Save clustering and calculation results as sets and image collections within the application</li>
+        <li>Export clustering assignments data table as a CSV file and clustering validation indexes as a Text file</li>
+        <li>Export whole image collections or sets as NIfTI files</li>
+
       </ul>
 
       <h2> The NIfTI format </h2>
@@ -174,7 +181,7 @@
 	     <p>Source code available on <a href="https://github.com/TELECOMNancy/brainMapper" target="_blank">GitHub repository</a></p>
     </div>
     <div>
-      <p> <b>Authors</b>: R. Agathon (@yoshcraft), M. Cluchague (@maximeCluchague), G. Husson (@Graziella-Husson), V. Zelaya (@vz-chameleon) 
+      <p> <b>Authors</b>: R. Agathon (@yoshcraft), M. Cluchague (@maximeCluchague), G. Husson (@Graziella-Husson), V. Zelaya (@vz-chameleon)
     </div>
 	</footer>
   </body>
