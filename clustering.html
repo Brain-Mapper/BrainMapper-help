@@ -81,10 +81,14 @@
         	<h3 id="extract">3.1.1 How data is extracted</h3>
         	<p>
             From the main view page, where all collections are accessible, the user can click on 'clustering' button at the bottom right, once he has selected some image collections.<br/>
-        		<img src="imgs/access_clustering.png" style="width:50%">
-            <br/><br/>
+            <div style="padding-left: 22%; padding-top: 1%;padding-bottom: 1%;">
+        		    <img src="imgs/access_clustering.png" style="width:70%">
+            </div>
+            <br><br>
             A pop up dialog window will appear. It shows the number of image collections selected as well as the total number of NIfTI images to be treated.<br/>
-            <img src="imgs/select_extraction_mode.png" style="width:50%">
+            <div style="padding-left: 22%; padding-top: 1%;padding-bottom: 1%;">
+              <img src="imgs/select_extraction_mode.png" style="width:70%">
+            </div>
             <br/><br/>
             In this windows, the user can select between two ways of extracting the image's information before the clustering view is loaded : our software creates a
             list of <em>interesting></em> voxels by extracting the coordinates of all the voxels that have an intensity greater than 0 or by calculating the image's centroid
@@ -95,7 +99,9 @@
         	<p>
             When all points are selected by choosing 'Use all region points for each file', the data used for clustering is the list of all voxels whose intensity is greater than 0. <br/>
             The clustering view thus contains a data table with several data entries <br/>
-            <img src="imgs/clust_allp.png" style="width:50%">
+            <div style="padding-left: 22%; padding-top: 1%;padding-bottom: 1%;">
+              <img src="imgs/clust_allp.png" style="width:70%">
+            </div>
             <br/>
 
           </p>
@@ -106,12 +112,30 @@
             <br/>
             The clustering view thus contains a data table with a single data entries per selected file : if a total of 4 files in 2 different image collections were selected, the data table
               will display 4 data entries <br>
-            <img src="imgs/clust_centroids.png" style="width:50%">
+              <div style="padding-left: 22%; padding-top: 1%;padding-bottom: 1%;">
+                <img src="imgs/clust_centroids.png" style="width:70%">
+              </div>
             <br>
           </p>
 
           <h2 id="methods">3.2 Apply clustering algorithms on extracted data</h2>
-        	<p> Once you have extracted the data from   </p>
+        	<p> Once you have extracted the data from the selected images, you can choose which algorithm clustering to apply by clicking on the yellow bar at the top left ont the clustering view.</p>
+          <br>
+          <div style="padding-left: 22%; padding-top: 1%;padding-bottom: 1%;">
+            <img src="imgs/clust_chooser.png" style="width:70%">
+          </div>
+          <br>
+          <br>
+          The current version of <em>brainMapper</em> has 3 clustering methods the user can choose from : <em><b>KMeans</b></em>, <em><b>KMedoids</b></em> and <em><b>Agglomerative Clustering</b></em>. <br>
+          <em><b>KMeans</b></em> and <em><b>Agglomerative Clustering</b></em> come from the library for machine learning in Python, <em><b>scikit-learn</b></em> but an implementation of <em><b>KMedoids</b></em>
+          was made available by the developping team.
+          <br><br>
+          Once an algorithm is selected, information and the algorithm's parameters page will appear on the left section of clustering view.
+          You can select and enter the parameters for the clustering algorithm here.
+          <div style="padding-left: 35%; padding-top: 1%;padding-bottom: 1%;">
+            <img src="imgs/clust_params.png" style="height:20%">
+          </div>
+
           <h3 id="kmeans">3.2.1 KMeans</h3>
         	<p> </p>
           <h3 id="kmedoids">3.2.2 KMedoids</h3>
@@ -125,10 +149,23 @@
         	<p> </p>
 
           <h2 id="data">3.3 Execute custom functions : user script environment</h2>
-        	<p></p>
+        	<p> In the clustering method chooser, you may see the option 'Custom user script'. <br>
+            By selecting it the user can write the algorithm she/he would like to apply to the extracted data.
+            <div style="padding-left: 12%; padding-top:3%; padding-bottom:3%">
+              <div class="alert alert-info" role="alert">
+              <h5 style="color:#f66;">INFORMATION</h5>
+              <b>This functionality, although incorporated to the user interface, is not functional in the current version.</b>
+              <br><br>
+              As interesting as this option was in the beginning of our project, we could not yet implement the necessary controls to make it a reality given the little time we had.
+              <br>
+              It is intended that this functionality will be worked on later on.
+            </div>
+           </div>
+
+          </p>
 
           <h2 id="clust_results">3.4 Clustering results</h2>
-        	<p></p>
+        	<p> </p>
           <h3 id="clust_assign">3.4.1 Cluster assignment</h3>
         	<p> </p>
           <h4 id="as_set">3.4.1.1 Save as set</h4>
