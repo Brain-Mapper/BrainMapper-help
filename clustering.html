@@ -64,10 +64,12 @@
       <div class="column-right">
         <div id="Clustering">
           <h1> Clustering on NIfTI data</h1>
+          <p>
           brain-Mapper aims to allow the user to use the interesting data from NIfTI files to perform clustering algorithms and thus determine the different groups of voxels.<br/>
           To accomplish this, brain-Mapper extracts the data from NIfTI files and allows you to select the method you would like to apply. Clustering results can be exported as a CSV file or
           saved in the application, and thus be exported as new NIfTI files.<br/><br/>
           In this section we explain the main functionalities of our software around clustering
+          </p>
 
           <h2 id="data">3.1 Data extraction for clustering</h2>
         	<p>
@@ -102,10 +104,10 @@
             By choosing 'Use centroids as file representation', the data used for clustering is the a list of a single voxel per file, which represents the <em>mean voxel</em> or <em>center</em>
             of all the voxels in the image. This type of extraction might take a while longer than the simple extraction, because several calculations are done.
             <br/>
-            The clustering view thus contains a data table with a single data entries per selected file : if a total of 4 files in 2 different image collections were selected, the data <table>
-              will display 4 data entries <br/>
+            The clustering view thus contains a data table with a single data entries per selected file : if a total of 4 files in 2 different image collections were selected, the data table
+              will display 4 data entries <br>
             <img src="imgs/clust_centroids.png" style="width:50%">
-            <br/>
+            <br>
           </p>
 
           <h2 id="methods">3.2 Apply clustering algorithms on extracted data</h2>
@@ -149,15 +151,15 @@
         </div>
       </div>
     </div>
+  </div>
 
-
-    <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-      <div class="column-left">
-  	     <p>Source code available on <a href="https://github.com/TELECOMNancy/brainMapper" target="_blank">GitHub repository</a></p>
-      </div>
-      <div>
-        <p> <b>Authors</b>: R. Agathon (@yoshcraft), M. Cluchague (@maximeCluchague), G. Husson (@Graziella-Husson), V. Zelaya (@vz-chameleon)
-      </div>
-  	</footer>
+  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+    <div class="column-left">
+	     <p>Source code available on <a href="https://github.com/TELECOMNancy/brainMapper" target="_blank">GitHub repository</a></p>
+    </div>
+    <div>
+      <p> <b>Authors</b>: R. Agathon (@yoshcraft), M. Cluchague (@maximeCluchague), G. Husson (@Graziella-Husson), V. Zelaya (@vz-chameleon)
+    </div>
+	</footer>
   </body>
 </html>
