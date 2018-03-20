@@ -50,7 +50,8 @@
 }
 
 .command {
-  background-color: #ccc;
+  width: 97%;
+  background-color: #eee;
   border-radius: 12px;
   padding: 2%;
 }

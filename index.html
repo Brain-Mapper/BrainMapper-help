@@ -158,16 +158,54 @@
       Our software can open compressed NIfTI formats ('.nii.gz')
 
       <h2> Install </h2>
-        <em>brainMapper</em> is written in <b>Python 2.7</b>
+        <em>brainMapper</em> is written in <b>Python 2.7</b>. In this section, we present a tutorial to use the latest version of brainMapper in your computer
+        <br>
+        <div style="padding-left: 12%; padding-top:3%; padding-bottom:3%">
+          <div class="alert alert-info" role="alert">
+          <h5 style="color:#f66;">WARNING</h5>
+          <b>The desktop application of this software is not available yet </b>
+          <br><br>
+          This install tutorial will allow the user to easily execute <em>brainMapper</em> but will not install a compiled version of it on the machine.<br>
+          <br>
+          We will include compiled desktop applications in the near future.
+        </div>
+       </div>
+
+
         <h3> Dependencies </h3>
         Our software uses the following Python libraries :
+
         <ul>
           <li>PyQt 4 (>= 4.0.0)</li>
-          <li>Numpy (>= )</li>
+          <li>Numpy (>= 1.8.2)</li>
           <li>scikit-learn (>= )</li>
           <li>pyqtgraph (>= )</li>
         </ul>
-        <h3> Linux and OSX </h3>
+        <h3> Ubuntu (GNU/Linux)</h3>
+        <ul>
+          <li>Open a terminal and install all dependencies with the following commands :</li>
+          <div style="padding-left: 1%; padding-top:1%; padding-bottom:1%">
+            <div class="command">
+              sudo apt-get install python-qt4<br>
+              sudo python2 -m pip install -U numpy<br>
+              sudo python2 -m pip install -U scikit-learn<br>
+              sudo python2 -m pip install pyqtgraph<br>
+            </div>
+          </div>
+          <li>Clone the repository or download a .zip file from this project's <a href="https://github.com/Brain-Mapper/brainMapper" target="_blank">GitHub repository</a>
+            and unzip it in a folder of your choice.</li>
+          <li>Create a <em>.sh</em> file next to the extracted folder that contains the following commands : </li>
+          <div style="padding-left: 1%; padding-top:1%; padding-bottom:1%">
+            <div class="command">
+              cd brainMapper-master/UI<br>
+              python brainMapper_ui.py<br>
+            </div>
+          </div>
+
+
+        </ul>
+
+        <h3> OSX (Mac)</h3>
 
         <h3> Windows </h3>
 
@@ -178,7 +216,7 @@
 
 	<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
     <div class="column-left">
-	     <p>Source code available on <a href="https://github.com/TELECOMNancy/brainMapper" target="_blank">GitHub repository</a></p>
+	     <p>Source code available on <a href="https://github.com/Brain-Mapper/brainMapper" target="_blank">GitHub repository</a></p>
     </div>
     <div>
       <p> <b>Authors</b>: R. Agathon (@yoshcraft), M. Cluchague (@maximeCluchague), G. Husson (@Graziella-Husson), V. Zelaya (@vz-chameleon)
