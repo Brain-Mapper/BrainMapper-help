@@ -186,8 +186,8 @@
           <h3 id="visu">3.4.2 Graphic visualisation</h3>
         	<p> Two graphic visualisations can give additional information on clustering results.
             <br><br>
-            One of these graphs represents the proportion of data entries assigned to each cluster with an histogram.<br>
-            The second graph plots the Silhouette values for each data entry after cluster assignment.
+            One of these graphs represents the proportion of data entries assigned to each cluster with an histogram (the graph in blue).<br>
+            The second graph plots the Silhouette values for each data entry after cluster assignment (the graph in green).
 
             <div style="padding-left: 22%; padding-top: 1%;padding-bottom: 1%;">
               <img src="imgs/clust_graphs.png" style="width:70%">
@@ -195,8 +195,27 @@
 
           </p>
           <h3 id="val_index">3.4.3 Internal Validation indexes</h3>
-        	<p> Internal validation indexes can be useful when one needs to determine which clustering execution is to be retained as conclusive. <br>
-            In this version of <em>brainMapper</em>, the  
+        	<p> Internal validation indexes can be useful when one needs to determine which clustering execution is to be retained as conclusive. <br><br>
+            In this version of <em>brainMapper</em>, validation indexes are calculated automatically after a clustering algorithm is applied on data.<br>
+            The internal validation indexes of the current version are :
+            <ul>
+              <li>The mean of sample's Silhouette index</li>
+              <li>Calinski-Habaraz score</li>
+              <li>Davis-Boulin index</li>
+            </ul>
+            <br><br>
+            To visualize their values, click on the <em style="font-size : 14px"><b>'Result Details'</b></em> button on the top bar.
+            <div style="padding-left: 22%; padding-top: 1%;padding-bottom: 1%;">
+              <img src="imgs/result_details.png" style="width:70%">
+            </div>
+            A pop-up window containing parameters, cluster centers and indexes values will appear.
+            <div style="padding-left: 22%; padding-top: 1%;padding-bottom: 1%;">
+              <img src="imgs/result_details_popup.png" style="width:70%">
+            </div>
+             Its contents can be saved in a .txt file by clicking on <em style="font-size : 14px"><b>'Save as text file'</b></em>.
+             <div style="padding-left: 22%; padding-top: 1%;padding-bottom: 1%;">
+               <img src="imgs/export_save.png" style="width:70%">
+             </div>
           </p>
 
           <h4 id="mean_silhouette">3.4.3.1 Mean Silhouette</h4>
