@@ -90,7 +90,7 @@
           	   <li><a href="calculations.html#41">4.1. Data extracted for calculation</a></li>
           	    <ul>
           		      <li><a href="calculations.html##411"><small>4.1.1. How data is extracted</small></a></li>
-          		      
+
           	      </ul>
               	<li><a href="calculations.html##42">4.2. Optimization of calculations</a></li>
               	  <ul>
@@ -210,19 +210,24 @@
 
         <ul>
           <li>PyQt 4 (>= 4.0.0)</li>
+          <li>NiBabel (>= 2.0.0 )</li>
           <li>Numpy (>= 1.8.2)</li>
           <li>scikit-learn (>= )</li>
           <li>pyqtgraph (>= )</li>
+          <li>pyopengl (>= )</li>
         </ul>
+
         <h3> Ubuntu (GNU/Linux)</h3>
         <ul>
           <li>Open a terminal and install all dependencies with the following commands :</li>
           <div style="padding-left: 1%; padding-top:1%; padding-bottom:1%">
             <div class="command">
               sudo apt-get install python-qt4<br>
+              sudo python2 -m pip install nibabel<br>
               sudo python2 -m pip install -U numpy<br>
               sudo python2 -m pip install -U scikit-learn<br>
               sudo python2 -m pip install pyqtgraph<br>
+              sudo python2 -m pip install pyopengl<br>
             </div>
           </div>
           <li>Clone the repository or download a .zip file from this project's <a href="https://github.com/Brain-Mapper/brainMapper" target="_blank">GitHub repository</a>
@@ -234,40 +239,44 @@
               python brainMapper_ui.py<br>
             </div>
           </div>
-
-
+          <br>
+          <li>Create a shorcut to this <em>.sh</em> file and place it where you want to : this file will be the application's "launcher"</em></li>
         </ul>
 
         <h3> OSX (Mac)</h3>
 
         <h3> Windows </h3>
-<p>
-	Install anaconda for windows: <a href=https://www.anaconda.com/download/>here</a>. Tick the option "Add Anaconda to my PATH variable".
-</p>
-<p>
-In a terminal :
-<ul>
-<li>conda install python=2.7</li>
-<li>activate root</li>
-<li>conda install -c anaconda pyqt=4.11.4</li>
-<li>conda install numpy</li>
-<li>conda install scikit-learn</li>
-<li>conda install pyqtgraph</li>
-<li>conda install pyopengl</li>
-<li>conda install -c conda-forge nibabel</li>
-</ul>
-</p>
-<p>
-Download the .zip project on the <a href="https://github.com/TELECOMNancy/brainMapper" target="_blank">GitHub repository</a>. Decompress it, and create a .bat file (carefull with the extensions in windows, sometime a .txt will be added and you cannot see it.).
-</p>
-<p>
-In the .bat file :
-<ul>
-<li>cd brainMapper-master/UI</li>
-<li>python UI.py</li>
-</ul>
-This file has to be in the same folder than the decompressed .zip. Create a .bat shortcut on your Desktop.
-</p>
+        <ul>
+	         <li>Install Anaconda package manager for <b>Windows and Python 2.7</b>: <a href=https://www.anaconda.com/download/>Download the installer here</a>. </li> <br>
+              When installing, tick the option <b><em>"Add Anaconda to my PATH variable".</em></b>
+
+           <li> In a Powershell terminal, type the following commands :</li>
+             <div style="padding-left: 1%; padding-top:1%; padding-bottom:1%">
+               <div class="command">
+                  conda install python=2.7<br>
+                  activate root<br>
+                  conda install -c anaconda pyqt=4.11.4<br>
+                  conda install numpy<br>
+                  conda install scikit-learn<br>
+                  conda install pyqtgraph<br>
+                  conda install pyopengl<br>
+                  conda install -c conda-forge nibabel<br>
+                </div>
+              </div>
+
+            <li>Download the .zip project on the <a href="https://github.com/TELECOMNancy/brainMapper" target="_blank">GitHub repository</a>. </li>
+            Decompress it, and create a .bat file (carefull with the extensions in windows, sometime a .txt will be added and you cannot see it.). <br>
+
+            <li>In the .bat file put in the following commands </li>
+            <div style="padding-left: 1%; padding-top:1%; padding-bottom:1%">
+              <div class="command">
+                  cd brainMapper-master/UI<br>
+                  python brainMapper_ui.py<br>
+              </div>
+            </div>
+            This file has to be in the same folder than the decompressed .zip. <br>
+            Finally, create a .bat shortcut (right click, 'Create shorcut') and put it on your Desktop : when you click on it, <b><<em>brainMapper</em></b> will launch .
+
     </div>
   </div>
 </div>
