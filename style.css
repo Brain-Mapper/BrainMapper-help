@@ -41,7 +41,17 @@
 }
 .alert-info{
   width: 80%;
-  background-color: #fcc;
+  background-color: #ffc796;
+  border-radius: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+  padding-top: 1%;
+}
+
+.note-info{
+  width: 80%;
+  background-color: #b6d7f9;
   border-radius: 10px;
   padding-left: 2%;
   padding-right: 2%;

@@ -65,6 +65,12 @@ cc<!DOCTYPE html>
         		To create a new set, you can use the shortcut "Ctrl+S" or click on the menu "New Set"/ "Create new set"
         		<img src="imgs/create_set.jpg" style="width:40%">
         	</p>
+			<div style="padding-left: 12%; padding-top:3%; padding-bottom:3%">
+         <div class="alert note-info" role="alert">
+         <h5 style="color:#306499;">NOTE</h5>
+         You cannot delete a set once its created. But you can rename it and change what it inside. You can also delete it manually when you export your workspace <a href="import_export.html#workspace">(see this page)</a>.
+       </div>
+      </div>
         	<h3 id="rename_set">2.2. Rename a set</h3>
         	<p>
         		Each set works the same way. You will see a little menu next to the name of your set. Click on the little pen logo to access to the rename pop up.
@@ -89,8 +95,14 @@ cc<!DOCTYPE html>
         		<img src="imgs/sub_set.jpg" style="width:20%">
         	</p>
         	<p>
-        		Note that you will see the list of a set's subsets by clicking on the little arrow logo on the right. If you click on the name of a set, the right side of the screen will change and show what is inside the set.
-        	</p>
+			<div style="padding-left: 12%; padding-top:3%; padding-bottom:3%">
+         <div class="alert note-info" role="alert">
+         <h5 style="color:#306499;">NOTE</h5>
+         You will see the list of a set's subsets by clicking on the little arrow logo on the right. If you click on the name of a set, the right side of the screen will change and show what is inside the set.
+        	
+       </div>
+      </div>
+        		</p>
         	<h2 id="collection">3. Collection</h2>
         	<p>
         		When you launch the software, a set named with the current date is already created. That means, when you create a collection, it will be added to the current set (named with the current date in this case).
@@ -112,12 +124,39 @@ cc<!DOCTYPE html>
         		<img src="imgs/col.jpg" style="width:40%">
         	</p>
         	<h4 id="excel">3.1.1. From an Excel file</h4>
+			<p>
+			The first line of the CSV contains the header of each column. These are :
+        <ul>
+               <li>File_Name_NIfTI : file name of the file associate to voxel. </li>
+               <li>Surgeon_ID : ID of the surgeon who make this file.</li>
+               <li>Patient_ID : ID of the patient.</li>
+               <li>Localisation : area of the brain.</li>
+               <li>Point_Name : voxel name.</li>
+               <li>Type_Of_Answer : brain fonctionnality associate to this voxel.</li>
+               <li>X : X coordinate.</li>
+               <li>Y : Y coordinate.</li>
+               <li>Z : Z coordinate.</li>
+               <li>Intensity : voxel intensity.</li>
+
+               </ul>
+</p>
+<div style="padding-left: 12%; padding-top:3%; padding-bottom:3%">
+         <div class="alert note-info" role="alert">
+         <h5 style="color:#306499;">NOTE</h5>
+         You can add a colllection with Excel files using the shortcut "Ctrl+E".	
+       </div>
+      </div>
         	<h4 id="nifti">3.1.2. From a NIfTI file</h4>
         	<p>
         		If you choose to create a collection with some NIfTI files, you will have to select them with a file browser. Note that you will be able to select images only if they are all in the same folder. Also, you can add only one image if you need to.
         	</p>
         	<p>
-        		Note that you can add a colllection with NIfTI files using the shortcut "Ctrl+N".
+			<div style="padding-left: 12%; padding-top:3%; padding-bottom:3%">
+         <div class="alert note-info" role="alert">
+         <h5 style="color:#306499;">NOTE</h5>
+         You can add a colllection with NIfTI files using the shortcut "Ctrl+N".	
+       </div>
+      </div>
         	</p>
         	<h3 id="select">3.2. Select collections</h3>
         	<p>
