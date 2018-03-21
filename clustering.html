@@ -127,8 +127,9 @@
           <br>
           <br>
           The current version of <em>brainMapper</em> has 3 clustering methods the user can choose from : <em><b>KMeans</b></em>, <em><b>KMedoids</b></em> and <em><b>Agglomerative Clustering</b></em>. <br>
-          <em><b>KMeans</b></em> and <em><b>Agglomerative Clustering</b></em> come from the library for machine learning in Python, <em><b>scikit-learn</b></em> but an implementation of <em><b>KMedoids</b></em>
-          was made available by the developping team.
+          <em><b>KMeans</b></em> and <em><b>Agglomerative Clustering</b></em> come from the library for machine learning in Python, <em><b>scikit-learn</b></em>
+          (for more details click <a href="http://scikit-learn.org/stable/modules/clustering.html#clustering" target="_blank" style="color : #5577ee">here</a> ) <br>
+          An implementation of <em><b>KMedoids</b></em> was made available by the developping team.
           <br><br>
           Once an algorithm is selected, information and the algorithm's parameters page will appear on the left section of clustering view.
           You can select and enter the parameters for the clustering algorithm here.
@@ -137,16 +138,19 @@
           </div>
 
           <h3 id="kmeans">3.2.1 KMeans</h3>
-        	<p> </p>
+        	<p> The KMeans algorithm is a classic clustering algorithm. <br><br>
+            We used the implementation from the <em><b>scikit-learn</b></em> library.<br>
+            For more details on the algorithm and its parameters click <a href="http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeansl" target="_blank" style="color : #5577ee">here</a>
+          </p>
           <h3 id="kmedoids">3.2.2 KMedoids</h3>
-        	<p> </p>
+        	<p> The KMedoids algorithm is an alternative to KMeans when you want the centroid of each cluster is the median point of each cluster.
+          </p>
           <h3 id="agglo">3.2.3 Agglomerative Clustering</h3>
-        	<p> </p>
-
-          <h4 id="ward">3.2.3.1 Ward Linkage</h4>
-        	<p> </p>
-          <h4 id="mean_link">3.2.3.2 Mean Linkage</h4>
-        	<p> </p>
+        	<p>
+            Agglomerative clustering, specially Ward Linkage, is sometimes used in neuroimaging. It is a Hierarchical clustering algorithm. <br><br>
+              We used the implementation of this type of algorithm from the <em><b>scikit-learn</b></em> library.<br>
+              For more details on its parameters click <a href="http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeansl" target="_blank" style="color : #5577ee">here</a>
+          </p>
 
           <h2 id="script_env">3.3 Execute custom functions : user script environment</h2>
         	<p> In the clustering method chooser, you may see the option 'Custom user script'. <br>
@@ -170,18 +174,28 @@
               <img src="imgs/clust_run.png" style="width:60%">
             </div>
             <br><br>
-            Cluster assignments will appear on the data table and graphic visualisations of the results will appear
+            Cluster assignments will appear on the data table and graphic visualisations of the results will appear.
           </p>
           <h3 id="clust_assign">3.4.1 Cluster assignment</h3>
         	<p>
+            The data table will be modified to display which data entry belongs to which cluster.
             <div style="padding-left: 22%; padding-top: 1%;padding-bottom: 1%;">
               <img src="imgs/clust_assign.png" style="width:70%">
             </div>
+            <br>
+            This assignment results can be saved in two ways : either by saving them as a new set in the application or by exporting
+            the results as a CSV file.
           </p>
+
           <h4 id="as_set">3.4.1.1 Save as set</h4>
-        	<p> </p>
+        	<p>
+            By clicking on the <em><b>'Save as set'</b></em> button, a NIfTI file containing all points from a given cluster will be recreated,
+            for each cluster obtained. A set containing this results will be added in the main page, in the 'Clustering' tab. <br>
+            <br>
+            They can be exported as NIfTI files from there.
+          </p>
           <h4 id="to_csv">3.4.1.2 Export as CSV file</h4>
-        	<p> </p>
+        	<p> By clicking on the 'Export' button, a CSV file containing the data table can be saved on the disk</p>
 
           <h3 id="visu">3.4.2 Graphic visualisation</h3>
         	<p> Two graphic visualisations can give additional information on clustering results.
@@ -219,12 +233,24 @@
           </p>
 
           <h4 id="mean_silhouette">3.4.3.1 Mean Silhouette</h4>
-        	<p> </p>
+        	<p> Mean silhouette index is calculated with the according function from <em><b>scikit-learn</b></em> library.
+            For more details click <a href="http://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html" target="_blank" style="color : #5577ee">here</a>
+          </p>
           <h4 id="ch_index">3.4.3.2 Calinski-Habaraz score</h4>
-        	<p> </p>
+        	<p>
+            Calinski-Habaraz score is computed with the according function from <em><b>scikit-learn</b></em> library.
+              For more details click <a href="http://scikit-learn.org/stable/modules/generated/sklearn.metrics.calinski_harabaz_score.html" target="_blank" style="color : #5577ee">here</a>
+          </p>
           <h4 id="db_index">3.4.3.3 Davis-Boulin index</h4>
-        	<p> </p>
-
+        	<p>
+            Davis-Boulin index is a way to evaluate clustering algorithms using the features of the dataset.
+            <div style="padding-left: 12%; padding-top:3%; padding-bottom:3%">
+               <div class="alert note-info" role="alert">
+               <h5 style="color:#306499;">NOTE</h5>
+               <b>A good value of Davis-Boulin index does not imply the best information retrieval.</b>
+             </div>
+            </div>
+          </p>
         </div>
       </div>
     </div>
