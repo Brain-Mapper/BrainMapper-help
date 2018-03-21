@@ -85,13 +85,44 @@
 				We recommand to save your work when your done. And load your workspace when you come back at it, with another instance of the software.
 			</p>
 			<h2 id="export">5.2 Export an Image Collection</h2>
+      <p>
+				To export your selcted image Collection, select the button "Export data" in the main page of the software. This operation let you choose between the export to NifTI and the export to CSV. The pop-up shown remember you the number of image collection and NifTI image selected.
+			</p>
 			<h3 id="export_nifti">5.2.1 As a NIfTI file</h3>
 			<p>
-				TODO
+				After this step, to export as a NifTI file, select the button "Export to NIfTI" and click "Apply". This operation let you choose where you want to save these files.
+			</p>
+      <p>
+				To take less place on the computer, NIfTI images are compressed ("nii.gz").
+			</p>
+      <p>
+				Note : this operation will save all the NIfTI files on your computer. Please check that you have enough space on your computer before this operation, to prevent any damage.
 			</p>
 			<h3 id="export_csv">5.2.2 As a CSV (Excel) file</h3>
 			<p>
-				TODO
+				After this step, to export as a CSV file, select the button "Export to CSV" and click to "Apply". An other pop-up will appear. This let you choose between "Export all points" (all the points with an intensity other than 0) and "Export only the centroid of each file". After choosing your export way, click on the "Apply" button and choose where you want to save the CSV file.
+			</p>
+      <p>
+				The first line of the CSV contains the header of each column. These are :
+        <ul>
+               <li>File_Name_NIfTI : file name of the file associate to voxel. </li>
+               <li>Surgeon_ID : ID of the surgeon who make this file.</li>
+               <li>Patient_ID : ID of the patient.</li>
+               <li>Localisation : area of the brain.</li>
+               <li>Point_Name : voxel name.</li>
+               <li>Type_Of_Answer : brain fonctionnality associate to this voxel.</li>
+               <li>X : X coordinate.</li>
+               <li>Y : Y coordinate.</li>
+               <li>Z : Z coordinate.</li>
+               <li>Intensity : voxel intensity.</li>
+
+               </ul>
+			</p>
+      <p>
+				Note : the software use the use the mni 152 coordinate system. Thus we use "mni_icbm152_t1_tal_nlin_asym_09a" as template. You can find all the mni template at <a href="http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009" target="_blank">link</a>.
+			</p>
+      <p>
+				Only "File_Name_NIfTI", "Point_Name", "X", "Y", "Z" and "Intensity" are auto-implemented by the software. The others columns are here to add medical informations.
 			</p>
         </div>
       </div>
